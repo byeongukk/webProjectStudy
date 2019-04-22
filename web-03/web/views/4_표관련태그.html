@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>표 관련 태그들</title>
+  <!-- 테이블 구조 확인용 스타일 적용 -->
+  <style>
+	thead {
+		background : blue;
+	}
+	tbody {
+		background : orangered;
+	}
+	tfoot {
+		background : yellow;
+	}
+
+  </style>
+
+ </head>
+ <body>
+	<!-- 
+		표를 만드는 태그에는 <table><tr><th><td>가 있다.
+		<table> : 기본적인 표를 생성해 주는 태그.
+		<tr> : 표의 행을 나타내는 태그이다.
+		<th> : 표의 제목 셀을 나타내는 태그이다. 테이블 헤더
+		<td> : 표의 일반 셀을 나타내는 태그이다. 테이블 데이터
+	-->
+	<h1>기본적인 표 만들기</h1>
+	<table border="1"> <!-- 테이블의 테두리-->
+		<caption><b>웹 브라우저의 종류</b></caption>
+		<tr>
+			<th>브라우저명</th>
+			<td>제조사</td>
+			<td>홈페이지</td>
+		</tr>
+		<tr>
+			<th>익스플로러</th>
+			<td>MS</td>
+			<td>https://www.microsoft.com</td>
+		</tr>
+		<tr>
+			<th>크롬</th>
+			<td>google</td>
+			<td>https://www.google.com</td>
+		</tr>
+		<tr>
+			<th>사파리</th>
+			<td>애플</td>
+			<td>https://www.apple.com</td>
+		</tr>
+		<tr>
+			<th>파이어폭스</th>
+			<td>Mozila</td>
+			<td>https://www.mozilla.org</td>
+		</tr>
+	</table>
+	<figure>
+		<figcaption>figure를 이용해서 테이블의 설명 혹은 img의 설명을
+		사용할 수 있다.</figcaption>
+		<figcaption>설명 내용을 여러 줄로 표기할 수 도 있다.</figcaption>
+	</figure>
+
+	<hr>
+
+	<!--
+		<td>태그의 속성을 이용하여 행과 열 합치기를 할 수 있다.
+		colspan : 열을 합치기 한다.
+		rowspan : 행을 합치기 한다.
+	-->
+	<h2>표의 행과 열 합치기</h2>
+	<h3>회원 정보</h3>
+	<table border="1">
+		<tr>
+			<td colspan="2" rowspan="2" width="130px"
+			height ="150px">사진</td>
+			<td width="80px">이름</td>
+			<td width="200px"></td>
+		</tr>
+		<tr>
+			<td>연락처</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="70px" height="50px">주소</td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td height="100px">자기소개</td>
+			<td colspan="3"></td>
+		</tr>
+	</table>		
+
+
+
+	<h2>테이블 태그의 구조 설정</h2>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>나이</th>
+				<th>주소</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>김진호</td>
+				<td>40</td>
+				<td>경기도 남양주시 지금동</td>
+			</tr>
+			<tr>
+				<td>김혜미</td>
+				<td>20</td>
+				<td>경기도 남양주시 지금동</td>
+			</tr>
+			<tr>
+				<td>김서준</td>
+				<td>6</td>
+				<td>경기도 남양주 지금동</td>
+			</tr>
+
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2">총 인원</td>
+				<td>3명</td>
+			</tr>
+			
+		</tfoot>
+	</table>
+
+
+
+
+
+
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
+
+ </body>
+</html>

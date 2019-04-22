@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 align="center">My first web project</h1>
+	
+	
+	<!-- <form action="/w3/prodctInsert" method="post">
+		<table align="center">
+			<tr>
+				<td><label>아이디</label></td>
+				<td><input type="text" name="userId"></td>
+				<td rowspan="2">
+					<button type="submit" style="height:50px;">로그인</button>
+				</td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td>
+					<input type="password" name="password">
+				</td>
+			</tr>	
+		</table>
+	</form> -->
+	<form action="/w3/productInsert" method="post">
+		<label>물품 ID :</label>
+		<input type="text" name="productId" placeholder="물품아이디">
+		<br>
+		<label>물품명 :</label>
+		<input type="text" name="productName" placeholder="물품명">
+		<br>
+		<label>가격 :</label>
+		<input type="text" name="price" placeholder="가격">
+		<br>
+		<label>설명:</label>
+		<input type="text" name="description" placeholder="설명">
+		<br><br>
+		<input type="submit" value="추가">
+		<br>
+	</form>
+	
+	<form action="/w3/selectAll">
+		<input type="submit" value="모두보기">
+	</form>
+
+</body>
+</html>
